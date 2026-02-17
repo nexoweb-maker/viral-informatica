@@ -192,8 +192,8 @@
   const form = document.getElementById('contact-form');
   if (!form) return;
 
-  // Replace with real phone number: 549 + area + number (no leading 0)
-  const WA_NUMBER = '54XXXXXXXXXX';
+  // Número real SIN +, SIN espacios, SIN guiones
+  const WA_NUMBER = '5492392488913';
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -206,7 +206,7 @@
       return;
     }
 
-    const text = `Hola Delta Computers! 👋\n\nMi nombre es *${nombre}*.\n\n${mensaje}`;
+    const text = `Hola Viral Informática! \n\nMi nombre es *${nombre}*.\n\n${mensaje}`;
     const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
 
     window.open(url, '_blank', 'noopener,noreferrer');
